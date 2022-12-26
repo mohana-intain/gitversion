@@ -150,6 +150,7 @@ app.post('/api/v1/trustee/uploadservicerreportCharlesfort', function (req, res) 
       res.status(404).send('Directory Does Not exist!');
       logger.debug("Directory Does Not exist!");
       logger.debug("Directory Does Not exist22!");
+      logger.debug("Directory Does Not exist3!");
     }
     else {
       upload(req, res, function (err) {

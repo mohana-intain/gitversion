@@ -1,5 +1,18 @@
 mode: ContinuousDeployment
-branches: {}
+branches: 
+  develop:
+    mode: ContinuousDeployment
+    tag: alpha
+    increment: Minor
+    prevent-increment-of-merged-branch-version: false
+    track-merge-target: true
+    regex: ^dev(elop)?(ment)?$
+    source-branches: []
+    tracks-release-branches: true
+    is-release-branch: false
+    is-mainline: false
+    pre-release-weight: 0
+
 ignore:
   sha: []
 merge-message-formats: {}
